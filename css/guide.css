@@ -1,0 +1,94 @@
+.guide-body {
+  background-color: #ffffff80;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  transition: opacity 0.5s;
+}
+
+.guide-body.welcome {
+  background-color: #fff;
+  padding-top: 5%;
+  margin-top: -10%;
+}
+
+.guide-body.white {
+  background-color: #fff;
+  padding-top: 0;
+}
+
+#close.guide-body {
+  opacity: 0;
+}
+
+.guide-box {
+  background-color: #fff;
+  width: 80%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  border-radius: 5px;
+  animation-delay: 0.3s;
+  animation: guide-box-anim 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  padding: 10px;
+}
+
+.guide-body h2 {
+  font-weight: 600;
+  border-bottom: 1px solid #d8d8d8;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+.guide-body p {
+  font-weight: 300;
+  margin-bottom: 20px;
+  color: rgb(44, 44, 44);
+}
+.guide-body button {
+  width: 200px;
+  align-self: flex-end;
+}
+.guide-body .single-pick,
+.guide-body .double-pick {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.guide-body .double-pick {
+  margin-top: -20px;
+  padding-top: 20px;
+  height: 500px;
+  align-self: center;
+}
+.guide-body .btns {
+  display: flex;
+}
+.guide-body .double-pick .btns {
+  width: 100%;
+}
+.guide-body .btns button:first-of-type {
+  background-color: #3d3d3d;
+}
+.guide-body .btns button {
+  flex: 1;
+  margin: 5px;
+}
+.guide-body .single-pick.restart {
+  animation: guide-box-anim 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes guide-box-anim {
+  0% {
+    transform: translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

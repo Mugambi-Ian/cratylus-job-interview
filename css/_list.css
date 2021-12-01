@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+.main-body {
+  z-index: 5;
+  display: flex;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-family: "Quicksand", sans-serif;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+img {
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  margin: 0;
+}
+
+.text {
+  -webkit-touch-callout: unset;
+  -webkit-user-select: unset;
+  -khtml-user-select: unset;
+  -moz-user-select: unset;
+  -ms-user-select: unset;
+  user-select: unset;
+}
+button {
+  transition: all 0.3s;
+  background-color: #197091;
+  padding: 10px;
+  border-color: unset;
+  border: unset;
+  color: #fff;
+  font-family: "Quicksand", sans-serif;
+}
+button:active {
+  transform: scale(0.9);
+}
+
+@import url("./splash.css");
+@import url("./home.css");
+@import url("./guide.css");
